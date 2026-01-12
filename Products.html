@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - J & J's Cafeteria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">J & J's Cafeteria</a>
+            <div class="hamburger" onclick="toggleMenu()" style="display:none;">&#9776;</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Our Sizzling Menu</h1>
+        <p>Enjoy our best sellers with unlimited rice and gravy!</p>
+
+        <div class="product-grid">
+            
+            <div class="product-card">
+                <img src="porksisig.jpg" class="product-img" alt="Pork Sisig">
+                <h3>Pork Sisig</h3>
+                <span class="price-tag">₱95.00</span>
+                <p>Classic sizzling pork with egg.</p>
+            </div>
+
+            <div class="product-card">
+                <img src="tonkatsuwegg.jpg" class="product-img" alt="Tonkatsu">
+                <h3>Tonkatsu w/ Egg <span class="badge">Best Seller</span></h3>
+                <span class="price-tag">₱110.00</span>
+                <p>Crispy breaded pork cutlet.</p>
+            </div>
+
+            <div class="product-card">
+                <img src="bagnetkarekare.jpg" class="product-img" alt="Bagnet Kare-Kare">
+                <h3>Bagnet Kare-Kare</h3>
+                <span class="price-tag">₱110.00</span>
+                <p>Crispy bagnet with peanut sauce.</p>
+            </div>
+
+            <div class="product-card">
+                <img src="friedchicken-mushroom.jpg" class="product-img" alt="Fried Chicken">
+                <h3>Fried Chicken w/ Mushroom</h3>
+                <span class="price-tag">₱139.00</span>
+                <p>Golden fried chicken with savory sauce.</p>
+            </div>
+
+            <div class="product-card">
+                <img src="stuffedpusit.jpg" class="product-img" alt="Grilled Pusit">
+                <h3>Grilled Stuffed Pusit <span class="badge">Best Seller</span></h3>
+                <span class="price-tag">₱130.00</span>
+                <p>Fresh squid stuffed and grilled.</p>
+            </div>
+
+            <div class="product-card">
+                <img src="grilledliempo.jpg" class="product-img" alt="Grilled Liempo">
+                <h3>Grilled Liempo <span class="badge">Recommended</span></h3>
+                <span class="price-tag">₱145.00</span>
+                <p>Marinated grilled pork belly.</p>
+            </div>
+
+            <div class="product-card">
+                <img src="katsucurry.jpg" class="product-img" alt="Katsu Curry">
+                <h3>Katsu Curry <span class="badge">Best Seller</span></h3>
+                <span class="price-tag">₱135.00</span>
+                <p>Crispy katsu with rich curry sauce.</p>
+            </div>
+
+            <div class="product-card">
+                <img src="hungarian.jpg" class="product-img" alt="Hungarian Sausage">
+                <h3>Hungarian w/ Mushroom</h3>
+                <span class="price-tag">₱85.00</span>
+                <p>Spicy sausage with mushroom gravy.</p>
+            </div>
+
+            <div class="product-card">
+                <img src="chicken-bbq.jpg" class="product-img" alt="Chicken BBQ">
+                <h3>Chicken BBQ <span class="badge">Best Seller</span></h3>
+                <span class="price-tag">₱145.00</span>
+                <p>Sweet and savory BBQ chicken.</p>
+            </div>
+
+            <div class="product-card">
+                <img src="paes.jpg" class="product-img" alt="Beef Pares">
+                <h3>Beef Pares <span class="badge">Best Seller</span></h3>
+                <span class="price-tag">₱120.00</span>
+                <p>Tender beef brisket stew.</p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 J & J's Cafeteria. All Rights Reserved | <a href="contact.html" style="color:white;">Contact Us</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        if (window.innerWidth <= 768) {
+            document.querySelector('.hamburger').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

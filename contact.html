@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - J & J's Cafeteria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">J & J's Cafeteria</a>
+            <div class="hamburger" onclick="toggleMenu()" style="display:none;">&#9776;</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact & Support</h1>
+        
+        <div style="margin-bottom: 20px;">
+            <h3>Find Us</h3>
+			<p><strong>Facebook:</strong> J & J's Cafeteria</p>
+            <p><strong>Email:</strong> orariojevo@gmail.com</p>
+            <p><strong>Phone:</strong> (+63) 998-262-9476</p>
+            <p><strong>Status:</strong> Open Daily 10:00 AM - 9:00 PM</p>
+			<p><strong>Location:</strong> 588 asuncion diaz abella road santo cristo, San Jose del Monte, Philippines, 3023</p>
+        </div>
+
+        <hr style="margin: 20px 0;">
+
+        <h3>Need Help? / Send Feedback</h3>
+        <p>Do you have a problem with your food? Do you have a problem with our staff? Let us know!</p>
+
+        <form onsubmit="validateForm(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 J & J's Cafeteria. | <a href="contact.html" style="color:white;">Contact Us</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        if (window.innerWidth <= 768) {
+            document.querySelector('.hamburger').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

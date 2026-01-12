@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J & J's Cafeteria - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">J & J's Cafeteria</a>
+            
+            <div class="hamburger" onclick="toggleMenu()" style="display:none;">&#9776;</div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search meals...">
+                <button onclick="searchSite()">Go</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div style="text-align: center;">
+            <h1 style="font-size: 2.5rem;">SIZZLING MEALS UNLIMITED!</h1>
+            <p style="font-size: 1.2rem; font-weight: bold;">Rice • Gravy • Soup • Juice</p>
+			
+			<img src="newlogo.webp" 
+                 alt="Sizzling Banner" 
+                 style="width: 35%; border-radius: 8px; margin: 20px 0;">
+        </div>
+
+        <h2>Why Eat With Us?</h2>
+        <p>We serve the hottest, most affordable sizzling plates in town. Perfect for students and families looking for a hearty meal. We pride ourselves on generous servings and affordable prices. 
+		WE SERVE VARIETIES OF SIZZLING, ULO-ULO, AND OTHERS! WE ALSO HAVE EAT-ALL-YOU CAN EVERY SATURDAY!!</p>
+        
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="products.html" class="btn" style="padding: 15px 30px; font-size: 1.2rem;">View Full Menu</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 J & J's Cafeteria. All Rights Reserved | <a href="contact.html" style="color:white;">Contact Us</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        if (window.innerWidth <= 768) {
+            document.querySelector('.hamburger').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
